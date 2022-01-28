@@ -1,5 +1,7 @@
 package day08_LogicalOperators_SingleIfStatement;
 
+import java.util.Scanner;
+
 public class Single_IF_Statements {
     public static void main(String[] args) {
     /*
