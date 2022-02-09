@@ -1,0 +1,64 @@
+
+                                          ## STRING CLASS INTRO ##
+
+String presented in "java.lang"package. Importing done by compiler implicitly.(any class by java.lang pack)
+
+ -String Class allows having objects such as "Java" or "Cydeo",and indicates that string text can be created as well.
+ -Every single character seen in the String has an index number. That is why it is printed it will be printed in order.
+ - Index numbers start from zero.
+    ex: "Cydeo"
+         01234
+ -Every single String object is immutable, which means the object cannot be changed/modified once it is created.
+ -There are two ways to create String objects:
+    1. By String literal >> by using the double quote ex: String str="wooden spoon";
+    very special objects compared to any other subjects in java due to having special memory allocation.
+  !! All the objects(String literal) created in Java stored in the memory called HEAP,
+  while all the local variables created do not take any space in the memory and stored in STACK.
+
+                                     **STRING POOL**
+ -String pool is nothing but a storage area in Java heap where string literals stores.
+It is also known as String Intern Pool or String Constant Pool. Whenever we create a string the string object occupies
+some space in the heap memory. Creating a number of strings may increase the cost and memory too which may reduce the
+performance also. The JVM performs some steps during the initialization of string literals that increase the performance
+and decrease the memory load. To decrease the number of String objects created in the JVM the String class keeps
+a pool of strings. When we create a string literal, the JVM first check that literal in the String pool.
+If the literal is already present in the pool, it returns a reference to the pooled instance.
+If the literal is not present in the pool, a new String object takes place in the String pool.
+
+                                                Stack                Heap
+for ex: String name="wooden spoon";            name
+        String name2="wooden spoon"; >>>>>     name2              "wooden spoon"
+        String name3="wooden spoon";           name3
+
+   2. By New Keyword >> Creates new different object in the heap.
+!Remember that all the String literals created with the new keyword take place in the Java heap, not in the String pool.
+
+                                        *** STRING METHODS ***
+ charAt() >> index number has to be given. returns a char value at the given index number.
+  i.e.  String word="Cydeo";
+               index:01234
+               char thirdChar=word.charAt(2);
+               System.out.println("thirdChar = " + thirdChar);
+ if the index is a negative value or greater than this string length, it throws StringIndexOutOfBoundsException.
+  i.e.         char tenthChar = word.charAt(9);
+               System.out.println("tenthChar = " + tenthChar);
+    OUTPUT:    Exception in thread "main" java.lang.StringIndexOutOfBoundsException: String index out of range: 9
+
+------------------------------------------------
+length() >> finds the length of a string. Returns total number of the characters.(int).
+The length of the Java string is the same as the Unicode code units of the string.
+ i.e.   String s1="Batch 25 is the best batch";
+        int totalChar= s1.length();
+        System.out.println("totalChar = " + totalChar);
+        char lastChar=s1.charAt(totalChar-1);
+        System.out.println("lastChar = " + lastChar);
+ ------------------------------------------------
+ toLowerCase() >> returns the string in lowercase letter, meaning it converts all characters of the string into lower case letter.
+ toUpperCase() >> returns the string in uppercase letter, meaning it converts all characters of the string into upper case letter.
+ !! STRING IS IMMUTABLE. IT CANNOT MODIFY BUT CREATE A NEW OBJECT!!
+ !!NONE OF THE METHODS IN STRING CAN MODIFY THE CREATED STRING!!
+
+ i.e. String str = "wooden spoon";
+             str = str.toUpperCase();// new string object will be created as "WOODEN SPOON" unless u assigned it back
+      System.out.println(str); // output is lower case unless u assign str to the method.
+ ------------------------------------------------
