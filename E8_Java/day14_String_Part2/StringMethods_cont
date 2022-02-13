@@ -1,0 +1,40 @@
+                                     ***STRING METHODS****
+    trim() >> eliminates leading and trailing spaces.
+          String str1="       bacth 25            "; // deletes the white spaces
+          str1= str1.trim(); // "batch25"
+          System.out.println(str1);
+---------------------------------------------------------------------------------------
+    indexOf() & >> returns the position of the first occurrence of the specified character
+or string in a specified string. (starts from left to count)
+    lastIndexOf() >> the last index of the given character value or substring. (starts from right to count)
+If it is not found, it returns -1. The index counter starts from zero.
+---------------------------------------------------------------------------------------
+    replace()>> returns a string replacing all the old char or CharSequence to new char or CharSequence.
+    ex:       String str="Java is fun, I love learning Java";
+              String str2= str.replace("Java","Python");
+
+    replaceFirst() >> replaces the first occurrence
+    ex:  String result= "Java Java Java Java Java ";
+               result=result.replaceFirst("Java", "Python");
+
+    replaceAll() >> replaces all the occurrences of old string with the new string
+
+---------------------------------------------------------------------------------------
+    substring() >> method returns a part of the string.
+
+    We pass beginIndex and endIndex number position in the Java substring method where beginIndex is inclusive,
+and endIndex is exclusive. In other words, the beginIndex starts from 0, whereas the endIndex starts from 1.
+
+    ex: String word= "Cydeo School";
+                           // 012345...
+        String brand=word.substring(0, 4);// it stops on the 4th index. add+1 to print last index you put.
+                System.out.println(brand);
+        String brands=word.substring(0,4+1);
+                System.out.println(brands);
+---------------------------------------------------------------------------------------
+    replace() >>  return String whose value is the concatenation of given String repeated count times.
+    If the string is empty or the count is zero then the empty string is returned.
+
+    ex: String str="Cydeo";
+        String str2= str.repeat(4);
+        System.out.println(str2);

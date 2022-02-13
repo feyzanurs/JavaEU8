@@ -5,6 +5,7 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/E8_Java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Oscar_ReviewSessions" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Replit_Tasks" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
