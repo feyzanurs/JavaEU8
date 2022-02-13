@@ -62,3 +62,8 @@ The length of the Java string is the same as the Unicode code units of the strin
              str = str.toUpperCase();// new string object will be created as "WOODEN SPOON" unless u assigned it back
       System.out.println(str); // output is lower case unless u assign str to the method.
  ------------------------------------------------
+ equalsIgnoreCase() >> String class compares two strings irrespective of the case (lower or upper) of the string.
+Returns a boolean value, true if the argument is not null and represents an equivalent String ignoring case, else false.
+
+ i.e. String str4 = new String("JAVA"); // if you want to check without case sensitivity
+              System.out.println(str2.equalsIgnoreCase(str4)); // true
