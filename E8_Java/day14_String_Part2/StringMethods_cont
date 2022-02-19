@@ -38,3 +38,35 @@ and endIndex is exclusive. In other words, the beginIndex starts from 0, whereas
     ex: String str="Cydeo";
         String str2= str.repeat(4);
         System.out.println(str2);
+---------------------------------------------------------------------------------------
+    isEmpty() >> checks whether a String is empty or not.
+    This method returns true if the given string is empty, else it returns false.
+---------------------------------------------------------------------------------------
+    isBlank() >> method to determine is a given string is blank or empty or contains only white spaces.
+
+---------------------------------------------------------------------------------------
+    equals() >>  compares the two given strings based on the data/content of the string.
+    If all the contents of both the strings are the same, it returns true.
+    If all characters are not matched, then it returns false
+
+---------------------------------------------------------------------------------------
+     equalsIgnoreCase() >>String class compares two strings irrespective of the case (lower or upper) of the string.
+     This method returns a boolean value, true if the argument is not null and represents an equivalent
+ String ignoring case, else false.
+
+         ex:
+         // Yes,YES,yEs,yES,YEs...
+         System.out.println("YEs".equalsIgnoreCase("Yes"));
+---------------------------------------------------------------------------------------
+    contains() >> method in Java is used to search the substring in a given String.
+    Returns: If the substring is found in the specified String, then it returns a true value; otherwise,
+    it returns a false value.
+---------------------------------------------------------------------------------------
+    startsWith() >> used to check the prefix of string. It verifies if given string starts with argument string or not.
+  startsWith() method is overloaded method and has two forms: boolean startsWith(String str) –
+  returns true if the str is a prefix of the String.
+
+---------------------------------------------------------------------------------------
+    endsWith() >> method is used to check whether the string is ending with user-specified substring or not.
+    Based on this comparison it returns the result in boolean value true if the specific suffix is matched or
+  it returns false if the suffix does not match.

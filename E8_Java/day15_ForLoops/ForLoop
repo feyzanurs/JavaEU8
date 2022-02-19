@@ -1,0 +1,34 @@
+                               ******* FOR LOOP *******
+
+ ### LOOPS ###
+ - check condition
+ - if condition returns true, a code block will run
+ - the condition will be checked again and repeated until it turns false.
+ - Types of Loop Statements
+        1.For Loop
+        2.While Loop
+        3.do While
+
+  1. FOR LOOP
+  - Runs the given code specific number of times.
+  - Initialization is the starting point of the loop
+  - Condition is the ending point of the loop
+  - Iterator is responsible for making the condition false.
+
+  Syntax:
+  for (initialization; condition; iteration){
+    //Statements
+  }
+  - The initialization expression initializes the loop.
+  - when the condition expression evaluates to false, loop stops running
+  - the iteration gets executed after each iteration the loop.
+
+    For Loop Flow
+ 1. initialization is executed >> the first time the loop is run the variable is assigned by value.
+ 2. after the initialization, the condition will be checked >> Everytime the loop is run, the condition is checked.
+ 3. as far as the condition is true , the next is the given statement check and execution of the code block within
+ the loops body
+ 4. the last, iteration is executed until the condition turns to false >> when the code execution is finished
+ within the curly braces, the iteration gets executed.
+
+
