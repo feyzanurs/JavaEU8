@@ -23,5 +23,9 @@ public class Browsers {
             result="invalid browser name";
         }
         System.out.println(result);
+
+        System.out.println("000000000000000000000000000000000");
+        float f1= (12_345.1>123_45.0)?10:20;
+        System.out.println(f1);
     }
 }

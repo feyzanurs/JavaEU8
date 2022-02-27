@@ -17,6 +17,14 @@ public class PrintA_to_Z {
         for (char c='z';c>='a';c-- ) {
             System.out.print(c + " ");
         }
+        System.out.println("\n");
+        for (int i=1;i<=5;i++ )
+        if(i<=4){
+            System.out.print(i + ",");
+        }
+            else{
+            System.out.print(i);
+        }
     }
 
 }
