@@ -1,0 +1,33 @@
+--------------- BRANCHING STATEMENTS ---------------------
+
+1- BREAK
+
+Causes the termination of the loop
+tells interpreter to go on to the next statement of code outside of the loop.
+    EX:
+    Loop{
+  statement1;
+  statement2;
+ |  break; (forcing the loop to stop)
+ |   statement3;
+ |   statement4;
+ |   }
+ |------->> jumps out of the loop, no matter how many cycles are left, loop is exited.
+
+
+ 2- CONTINUE
+
+ Skips the current iteration of the loop and jumps to next iteration
+
+    EX:
+          >>> Loop{
+         |   statement1'
+         |   statement2;
+         |   continue;
+            statement3;   |
+            statement4;   |---->> these statements are skipped
+            }
+
+  Branching statements:
+  			break statement: exits the loop & switch
+  			continue statement: skips the current iteration

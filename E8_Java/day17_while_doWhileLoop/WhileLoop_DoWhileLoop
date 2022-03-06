@@ -1,0 +1,49 @@
+                    WHILE LOOP
+      ---------------------------------------
+  - Repeated if statement
+  - Condition is checked at start
+  -Loop gets terminated when condition is false.
+
+  SYNTAX:
+
+  while(number<=5){ // test number as a boolean expression
+  System.out.println("HELLO"); // if the boolean is true, perform these statements
+  number++;
+  } // while >> after executing the body of the loop, start over
+
+  ** A for loop can be used if the number of repetition is known in advance
+  ** A while loop can be used if the number of repetition is not fixed
+  ** A do-while loop can be used to replace while loop id the loop body supposed to be executed before checking condition
+
+
+                  DO  WHILE LOOP
+      ---------------------------------------
+      -Repeatedly executes same set of statement while condition is true.
+      -The statement is executed once initially then condition is checked at loop end
+      -Code in loop body will execute at least once
+
+   SYNTAX:
+   do{
+   // loop body
+   Statement ;
+   } while (boolean expression){
+
+   }
+
+# while loop: repeated if statement #
+
+	while(condition){
+		statement;
+	}
+
+# do -while : JUST DO IT #
+
+		do{
+			statement;
+		}while(condition);
+
+
+# branching statements:#
+			break statement: exits the loop & switch
+			continue statement: skips the current iteration
+
