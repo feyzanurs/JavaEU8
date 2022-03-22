@@ -1,0 +1,90 @@
+
+                ############ ARRAYS  ############
+1. Single Dimensional
+2. Arrays Utility
+3. For each loop
+4. Multi-Dimensional Array
+
+  Data Structure: Data Structures are a specialized means of organizing and storing data in computers
+  in such a way that we can perform operations on the stored data more efficiently.
+
+  Why we use data structure for? >> to use the data efficiently. storing data in organized matter
+
+  There are 3 types of data structures:
+  1.Array (size is fixed, support primitives & non primitives)
+  2.Collection (size not fixed, support only NON PRIMITIVES)
+  3.Map (size not fixed, only support NON PRIMITIVES)
+
+ <<<< ARRAYS >>>
+ - Special type of variables
+        regular variables: cannot have more than 1 data in it.
+        String name="David"; // "Josh"
+        Int num= 100
+ -Holds multiple values of same data type
+    If the variable set as array variable >> it allows you to store multiple data types at once.
+ -Size is fixed
+    Once the array is created you cannot increase or decrease the size of array. Size has to be specified.
+    for example: if 5 data will be stored in array, first declare the array size as 5.
+    ** other data types' size are not fixed in Java. Only array's size is fixed!! (Collection and Map not fixed)
+ -Supports both primitives & non primitives
+    only special to Array
+ -Every element has index number
+    Ordered data structure!
+
+ <<<< Declaring Arrays >>>>>
+
+ There are 2 ways to declare one dimensional arrays:
+    1. Specify the type and then specify square brackets[] and finally array variable name
+    int[] scores;
+    String[] names;
+    Student]students;
+
+    2. Specify the type, and the specify the array variable name which is followed by square brackets[]
+    int scores[];
+    String names[];
+    Student student[];
+
+ <<<<< Instantiating Arrays >>>>>>
+ To instantiate one dimensional array, use keyword new, followed by type and
+ then finally specify the size within square brackets[]
+    1. Declare and instantiate in separate statements
+        int[] scores;
+        scores=new int[4];
+    2. Declare and instantiate in single statements
+        int [] scores=new int[4];
+        String[] names=new String[5];
+
+Arrays Utility:
+        class name: Arrays >> method needs to be called  from this class in order to print any array,otherwise
+                               not possible to print any array.
+        package: java.util.
+        import java util and call toString method in order to print
+
+      toString(Array): converts array to string
+         System.out.println(Arrays.toString(myGroup)) >> prints the default value if there is no value initialized.
+default values for all non primitives >> null
+primitives such as byte, short, int, long >> 0
+                   float double >> 0.0
+                   boolean >> false
+
+ <<<<< Accessing the Index of Array Elements >>>>>
+ -Elements of an array can by accessed by using the square brackets[]
+ -index number needs to be provided.
+
+  <<<<< Assigning values to Array Elements >>>>>
+         numbers[0]=[20];
+           |     |    |
+  Array RefVar index value
+
+        20        0         0     30        0            0
+        |         |         |      |        |            |
+numbers[0] numbers[1] numbers[2] numbers[3] numbers[4] numbers[5]
+
+
+  <<<<< Array Initialization >>>>>
+  Like regular variables, Java also allows you to initialize an array's elements when you create the array
+
+    int[] myList={1,2,3,4,5}; >> if the data known exactly
+
+    int[] myList= new int [5]; >> if the data is not known exactly
+
