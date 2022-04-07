@@ -1,0 +1,30 @@
+Topics:
+    Arrays Utility Class: sort(), toString(), equals(), copyOf(), copyOfRange(),
+    For Each Loop
+    String methods: toCharArray(), split(),
+
+ Arrays Utility Class:
+    toString():/has to be called implicitly
+ Returns a string representation of the contents of the specified array. The string representation
+ consists of a list of the array’s elements, enclosed in square brackets (“[]”).
+ Adjacent elements are separated by the characters “, ” (a comma followed by a space). Returns “null” if a is null.
+ In case of an Object Array, if the array contains other arrays as elements,
+ they are converted to strings by the Object.toString() method inherited from Object,
+ which describes their identities rather than their contents.
+
+    sort(array): sorts the array in ascending order.
+
+    equals(array1,array2): checks if two arrays are equals, returns boolean
+
+    copyOf(array, newLength):Copies the specified array, truncating or padding with nulls (if necessary)
+  so the copy has the specified length.
+
+    copyOfRange(array,beginningIndex, endingIndex): Copies the specified range of the specified array into a new array.
+  The initial index of the range (from) must lie between zero and original.length, inclusive.
+
+  String Methods:
+    toCharArray(): returns a char array
+    "abc".toCharArray() >> {'a','b','c'}
+    split(value): returns String Array
+ "I love learning java programming language".split(" ")>>> {"I", "love", "learning", "java", "programming", "language"}
+    "ABC".split("")>>> {"A","B","C"}
