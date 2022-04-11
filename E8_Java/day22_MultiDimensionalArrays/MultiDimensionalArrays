@@ -1,0 +1,31 @@
+
+
+Single dimensional Array: container for elements
+
+Multi dimensional Array: container for the arrays
+-An array for arrays
+-A special variable that's used as a container of arrays
+-dimensions of the array can be 2,3,,4...n dimensions
+-The N dimensional array is a container for (N-1) dimensional Arrays
+ex: in order to have 2 dimensional arrays you have to have 1 container dimensional array
+
+Declaring Multi Dimensional Array
+ !! N dimensional Array contains (N-1)dimensional array
+
+    int[][]    array2D = new iny[3] [];
+     |   |       |               |
+   data  2sets   arrayRefVar    Num of 1dimensional Array
+   type  of
+        brackets
+        indicate a
+        2dimensional
+        array
+
+      [indexes of elements]
+           | index num.
+           | of elemts  0,1     0,1,2,3   0,1,2,3,4
+      int[][] arr2D ={ {1,2,3},{4,5,6,7},{8,9,10,11,12}};
+          | index num of  1        2           3
+          | 1D arrays
+       [indexes 1D Arrays]
+
